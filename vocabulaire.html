@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocabulaire de la Ville - French Fun</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            color: #e74c3c;
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .navigation {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .nav-link {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 1.2em;
+            padding: 12px 25px;
+            border-radius: 30px;
+            background: #e74c3c;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .nav-link:hover {
+            background: #c0392b;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        .section {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            margin: 30px 0;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .section-title {
+            font-size: 2em;
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 3px dashed #74b9ff;
+            padding-bottom: 15px;
+        }
+
+        .vocabulary-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .vocab-item {
+            background: linear-gradient(135deg, #dfe6e9 0%, #b2bec3 100%);
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            border: 3px solid #636e72;
+            transition: transform 0.3s ease;
+        }
+
+        .vocab-item:hover {
+            transform: scale(1.05);
+        }
+
+        .emoji {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .french {
+            color: #2d3436;
+            font-weight: bold;
+            font-size: 1.3em;
+            margin: 5px 0;
+        }
+
+        .translation {
+            color: #636e72;
+            font-style: italic;
+        }
+
+        .exercise {
+            background: #ffeaa7;
+            padding: 25px;
+            border-radius: 15px;
+            margin: 20px 0;
+            border: 3px dashed #fdcb6e;
+        }
+
+        .exercise-title {
+            color: #e17055;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+
+        .question {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 10px 0;
+            border-left: 4px solid #74b9ff;
+        }
+
+        .answer-input {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #b2bec3;
+            border-radius: 8px;
+            margin-top: 5px;
+            font-family: 'Comic Sans MS', cursive;
+        }
+
+        @media (max-width: 768px) {
+            .vocabulary-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            .nav-link {
+                display: block;
+                margin: 10px auto;
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🗺️ Orientation en Ville</h1>
+            <p>Apprendre à s'orienter en français !</p>
+        </div>
+
+        <div class="navigation">
+            <a href="index.html" class="nav-link">🏠 Retour à l'accueil</a>
+        </div>
+
+        <!-- Section 1: Vocabulary -->
+        <div class="section">
+            <h2 class="section-title">📚 Vocabulaire de la Ville</h2>
+            <div class="vocabulary-grid">
+                <div class="vocab-item">
+                    <div class="emoji">🏢</div>
+                    <div class="french">le bâtiment</div>
+                    <div class="translation">здание</div>
+                </div>
+                <div class="vocab-item">
+                    <div class="emoji">🚦</div>
+                    <div class="french">le feu de circulation</div>
+                    <div class="translation">светофор</div>
+                </div>
+                <div class="vocab-item">
+                    <div class="emoji">🗺️</div>
+                    <div class="french">la carte</div>
+                    <div class="translation">карта</div>
+                </div>
+                <div class="vocab-item">
+                    <div class="emoji">🏪</div>
+                    <div class="french">le magasin</div>
+                    <div class="translation">магазин</div>
+                </div>
+                <div class="vocab-item">
+                    <div class="emoji">🏥</div>
+                    <div class="french">l'hôpital</div>
+                    <div class="translation">больница</div>
+                </div>
+                <div class="vocab-item">
+                    <div class="emoji">🚇</div>
+                    <div class="french">le métro</div>
+                    <div class="translation">метро</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 2: Exercises -->
+        <div class="section">
+            <h2 class="section-title">✏️ Exercices</h2>
+            
+            <!-- Exercise 1 -->
+            <div class="exercise">
+                <h3 class="exercise-title">1. Complète avec au/à la/à l'/aux</h3>
+                <div class="question">
+                    <p>Je vais ___ magasin (le)</p>
+                    <input type="text" class="answer-input" placeholder="Votre réponse...">
+                </div>
+                <div class="question">
+                    <p>Elle est ___ hôpital (l')</p>
+                    <input type="text" class="answer-input" placeholder="Votre réponse...">
+                </div>
+            </div>
+
+            <!-- Exercise 2 -->
+            <div class="exercise">
+                <h3 class="exercise-title">2. Trouve l'erreur</h3>
+                <div class="question">
+                    <p>❌ Je vais à le parc</p>
+                    <input type="text" class="answer-input" placeholder="Corrigez la phrase...">
+                </div>
+                <div class="question">
+                    <p>❌ La maison de les parents</p>
+                    <input type="text" class="answer-input" placeholder="Corrigez la phrase...">
+                </div>
+            </div>
+
+            <!-- Exercise 3 -->
+            <div class="exercise">
+                <h3 class="exercise-title">3. Traduis en français</h3>
+                <div class="question">
+                    <p>Я иду к больнице</p>
+                    <input type="text" class="answer-input" placeholder="Traduction...">
+                </div>
+                <div class="question">
+                    <p>Мы в метро</p>
+                    <input type="text" class="answer-input" placeholder="Traduction...">
+                </div>
+            </div>
+
+            <!-- Exercise 4 -->
+            <div class="exercise">
+                <h3 class="exercise-title">4. Choisis la bonne réponse</h3>
+                <div class="question">
+                    <p>On va ___ (à le / au) cinéma</p>
+                    <input type="text" class="answer-input" placeholder="Votre choix...">
+                </div>
+                <div class="question">
+                    <p>C'est la voiture ___ (de le / du) médecin</p>
+                    <input type="text" class="answer-input" placeholder="Votre choix...">
+                </div>
+            </div>
+
+            <!-- Exercise 5 -->
+            <div class="exercise">
+                <h3 class="exercise-title">5. Pose une question</h3>
+                <div class="question">
+                    <p>Où est ___ hôpital ? (l')</p>
+                    <input type="text" class="answer-input" placeholder="Completez...">
+                </div>
+                <div class="question">
+                    <p>Comment va-t-on ___ métro ? (au)</p>
+                    <input type="text" class="answer-input" placeholder="Completez...">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
